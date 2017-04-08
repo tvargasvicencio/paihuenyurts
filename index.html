@@ -20,9 +20,9 @@
         }
 
         .parallax-container {
-          height: 500px;
+          height: 300px;
         }
-        
+
       </style>
 
     </head>
@@ -34,19 +34,17 @@
       <header>
         <nav>
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Tejado de Vidrio</a>
+            <a href="#!" class="brand-logo">    Paihuen Yurts</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">Javascript</a></li>
-              <li><a href="mobile.html">Mobile</a></li>
+              <li><a href="sass.html">Quienes Somos</a></li>
+              <li><a href="badges.html">Ubicación</a></li>
+              <li><a href="collapsible.html">Reserva!</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">Javascript</a></li>
-              <li><a href="mobile.html">Mobile</a></li>
+              <li><a href="sass.html">Quienes Somos</a></li>
+              <li><a href="badges.html">Ubicación</a></li>
+              <li><a href="collapsible.html">Reserva!</a></li>
             </ul>
           </div>
         </nav>
@@ -54,37 +52,60 @@
 
       <main>
         <div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="images/slider1.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          <ul class="slides">
+            <li>
+              <img src="images/slider1.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/slider2.jpg"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/slider3.jpg"> <!-- random image -->
+              <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="images/slider4.jpg"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
         </div>
-      </li>
-      <li>
-        <img src="images/slider2.jpg"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
+        <div class="row">
+          <h2 style="text-align: center">Contacto</h2>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate">
+                <label for="icon_telephone">Telephone</label>
+              </div>
+            </div>
+          </form>
         </div>
-      </li>
-      <li>
-        <img src="images/slider3.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+
+        <div class="parallax-container">
+          <div class="parallax"><img src="images/parallax2.jpg"></div>
         </div>
-      </li>
-      <li>
-        <img src="images/slider4.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
+
       </main>
 
       <footer class="page-footer">
@@ -118,6 +139,7 @@
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
         $('.slider').slider();
+        $('.parallax').parallax();
       });
 
     </script>
