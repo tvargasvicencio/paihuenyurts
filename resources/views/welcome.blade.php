@@ -14,11 +14,9 @@
 
     <style>
 
-    /*.carousel-item>img{
-        top:25% !important;
-        max-width:100% !important;
-    }*/
-
+    #navbar{
+        background-color:rgb(15, 143, 48);
+    }
     .parallax {
         /* The image used */
         background-image: url('images/imagen3.jpg');
@@ -46,11 +44,17 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+      display: block;
+    }
     </style>
 
 </head>
     <body>
-    <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+    <nav id="navbar" class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -68,30 +72,31 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron jumbotron-fluid">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="height:500px;">
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="max-height:500px;">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox" style="height:100%;">
+            <div class="carousel-inner" role="listbox" style="max-height:500px">
                 <div class="carousel-item active">
-                <img class="d-block mx-auto" src="images/slider1.jpg" alt="First slide">
+                <img class="d-block img-fluid" src="images/slider1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>...</h3>
                     <p>...</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block mx-auto" src="images/slider2.jpg" alt="Second slide">
+                <img class="d-block img-fluid" src="images/slider2.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>...</h3>
                     <p>...</p>
                 </div>
                 </div>
                 <div class="carousel-item">
-                <img class="d-block mx-auto" src="images/slider3.jpg" alt="Third slide">
+                <img class="d-block img-fluid" src="images/slider3.jpg" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h3>...</h3>
                     <p>...</p>
@@ -111,13 +116,13 @@
 
     <div class="parallax"></div>
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
         <img src="images/logo2.png" style="width:100%;">
     </div>
 
     <div class="parallax2"></div>
 
-    <div class="container">
+    <div class="container hidden-sm-down">
         <div class="row justify-content-md-center">
             <div class="col-12 col-md-auto">
                 <br>
